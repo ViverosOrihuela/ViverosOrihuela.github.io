@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contratación temporal en la recuperación de bosques</title>
+</head>
+<body bgcolor="#c8f7c8">
+
+<section>
+    <h2>Recuperación del bosque</h2>
+    <p>
+        Apoyamos la recuperación de los bosques. Nuestro objetivo es reforestar bosques, limpiar áreas afectadas y proteger la biodiversidad.
+        Si quieres apoyarnos, puedes hacerlo en el siguiente formulario.
+    </p>
+</section>
+
+<section>
+    <h2>Formulario de inscripción como voluntario</h2>
+
+    <form action="envio.html" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="30" placeholder="Tu nombre completo" required tabindex="1"><br><br>
+
+        <label for="motivacion">¿Por qué quieres ayudar al bosque?</label>
+        <textarea id="motivacion" name="motivacion" rows="4" cols="50" placeholder="Escribe tu motivación..." required tabindex="2"></textarea><br><br>
+
+        <fieldset>
+            <legend>Disponibilidad</legend>
+            <label><input type="radio" name="disponibilidad" value="fin_semana" required tabindex="3"> Fin de semana</label><br>
+            <label><input type="radio" name="disponibilidad" value="entre_semana" required tabindex="4"> Entre semana</label><br>
+        </fieldset><br>
+
+        <p>
+            El voluntario se compromete a respetar a los demás durante su proceso de voluntariado, 
+            a cuidar el medio ambiente y a no utilizar los recursos ni el equipamiento de la empresa 
+            de manera indebida, evitando así poner en peligro su seguridad y la de los demás, 
+            y a no derrochar recursos.
+        </p>
+
+        <label><input type="checkbox" name="acepto" required tabindex="5"> Acepto las normas del voluntariado</label><br><br>
+
+        <label for="documento">Subir certificado de educación si tiene formación relacionada con el proyecto:</label>
+        <input type="file" id="documento" name="documento" tabindex="6"><br><br>
+
+        <label for="lugar">Lugar donde quieres colaborar:</label>
+        <select id="region" name="region" required tabindex="7">
+            <option value="">--Selecciona--</option>
+            <option value="redovan">Sierra de Callosa del Segura</option>
+            <option value="torremendo">Sierra Escalona</option>
+            <option value="orihuela">Sierra de Orihuela</option>
+            <option value="desamparados">Universidad de Orihuela</option>
+        </select><br><br>
+
+        <label for="actividades">Roles de trabajo</label>
+        <select id="actividades" name="actividades" multiple size="4" tabindex="8">
+            <option value="plantar">Plantar árboles</option>
+            <option value="limpieza">Limpieza de áreas</option>
+            <option value="educacion">Educación ambiental</option>
+            <option value="investigacion">Investigación de flora y fauna</option>
+        </select><br><br>
+
+        <label for="codigo">Código asignado:</label>
+        <input type="text" id="codigo" name="codigo" value="VOL-001" readonly tabindex="9" placeholder="Si no tienes llamanos y te asignaremos uno"><br><br>
+
+        <input type="hidden" name="tipo_formulario" value="voluntariado_bosque">
+
+        <button type="submit" accesskey="s" tabindex="10">Enviar (Alt + S)</button>
+        <button type="reset" tabindex="11">Reset</button>
+        <button type="button" onclick="alert('Si tiene alguna duda, llame al 755 93 52 08 y estaremos encantados de responderle.')" tabindex="12">Info adicional</button>
+    </form>
+</section>
+
+<div>
+    <h2>Información de contacto</h2>
+    <p><b>Dirección:</b> Calle San Sebastián, 34, 03300 Orihuela</p>
+    <p><b>Teléfono:</b> 755 93 52 08</p>
+    <p><b>Horario:</b> Lunes a viernes de 9:00 a 18:00</p>
+</div>
+
+<br><br>
+
+<div>
+    <a href="aw_ut2_01.html" target="_blank">
+        <img src="imagenes\quienes.jpg" alt="Ir a Quienes Somos" width="200" height="150">
+    </a>
+    <a href="aw_ut2_02.html" target="_blank">
+        <img src="imagenes\catalogo.png" alt="Ir a Plantas Populares" width="200" height="150">
+    </a>
+</div>
+
+</body>
+</html>
